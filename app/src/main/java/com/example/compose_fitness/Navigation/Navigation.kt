@@ -8,6 +8,7 @@ import com.example.compose_fitness.Colors.DrawerColors
 import com.example.compose_fitness.Home.HomeScreen
 
 import com.example.compose_fitness.LoginScreen.LoginScreen
+import com.example.compose_fitness.Water_Tracker.WellnessScreen
 
 @Composable
 fun Navigation(){
@@ -15,6 +16,7 @@ fun Navigation(){
     NavHost(navController = navController, startDestination = "home") {
             composable("home") { HomeScreen(navController) }
             composable("login") { LoginScreen(navController) }
+            composable("wellness") { WellnessScreen(navController) }
 
             composable("settings") { DrawerColors(
                 themeChangeListener = {  },
